@@ -11,7 +11,7 @@ h1 {
   line-height: 45px;
 }
 footer p{
-    margin-top: 50px;
+    margin-top: 40px;
     font-size: 15px;
 }
 a{
@@ -25,7 +25,7 @@ strong{
     background: rgba(20,27,64);
     background: linear-gradient(90deg, rgba(20,27,64) 0%,rgba(16,22,59) 35%, rgba(4,3,39) 100% );
     margin:70px auto 0;
-    padding:50px ;
+    padding:40px ;
     max-width:700px;
     border-radius: 10px;
 }
@@ -45,6 +45,7 @@ strong{
   border: none;
   background: #25AEF6;
   color: white;
+  margin-left: 20px;
   transition: all 300ms ease-in-out;
 }
 .search-button:hover {
@@ -59,7 +60,7 @@ strong{
     width:80px;
 }
 .temperature-value{
-    position: relative;
+    position:relative;
     font-size:70px;
     font-weight:bold;
     bottom:20px;
@@ -73,15 +74,22 @@ strong{
     margin-top:-10px;
 }
 .more-weather-details{
-    position: relative;
-    left:450px;
+    margin-left: 520px;
     margin-top: -80px;
 }
 .humidity{
     margin-top: 10px;
 }
+.forecast-days{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+}
 .weather-forecast{
     margin-top: 100px;
+    background: #B6B7C1;
+    padding: 10px 30px;
 }
 .forecast-icon{
     margin-top:20px;
