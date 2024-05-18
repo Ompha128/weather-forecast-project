@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <title>weather-forecast</title>
+</head>
+<body>
+    <div class="weather-forecast-app">
+    <header>
+    <form id="search-form">
+        <input type="search" placeholder="Enter your city"  required id="search-input" class="search-city">
+        <input type="submit" value="Search" id="search-button">
+    </form>
+    </header>
+
+    <main>
+        <h1> Johanneburg</h1>
+
+        <div class="weather-current">
+            <span class="temperature-icon" id="icon"> ☀️</span>
+            <span class="temperature-value">20</span>
+            <span class="temperature-unit">°C</span>
+        </div>
+            
+            <div class="weather-description">
+                <span class="temperature-description">clear sky</span>
+                <span class="current-date">| Saturday 01:14</span>
+             </div>
+
+        <div class="more-weather-details">
+            <div class="wind-speed">Wind:3 KMPH</div>
+            <div class="humidity">Humidity:50%</div>
+        </div>
+
+        <div class="weather-forecast">
+        <div class="temperature-day"> Mon</div>
+        <div class="forecast-icon">🌥️</div>
+
+        <div class="temperature-degrees">
+        <div class="max-degree">20°</div>
+        <div class="min-degree">12°</div>
+        </div>
+        
+        </div>
+
+    </main>
+    <footer>
+        <p>
+            This project was coded by <a href="https://github.com/Ompha128" target="_blank"> Ompha Tshikombeni </a>,
+            and is open-sourced on <a href="#" target="_blank"> Github</a>
+            and hosted on <a href="#" target="_blank"> Netlify</a>
+        </p>
+    </footer>
+    
+<script src="src/script.js"></script>
+
+</div>
+</body>
+</html>
