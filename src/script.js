@@ -25,7 +25,7 @@ function getTemperature(response){
   timeElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML = `${response.data.condition.description} |`;
   humidityElement.innerHTML = `Humidity:<strong>${response.data.temperature.humidity}%</strong>`;
-  windElement.innerHTML = `Wind:<strong>${response.data.wind.speed} KMPH</strong>`;
+  windElement.innerHTML = `Wind:<strong>${response.data.wind.speed} km/h</strong>`;
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="temperature-icon" />`;
 }
   
@@ -62,7 +62,7 @@ function fetchCity(city) {
 }
 function displayForecast(){
 
-  let days=["Sun", "Mon", "Tue", "Wed", "Thu","Fri","Sat"];
+  let days=[ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml="";
 
   days.forEach(function (day) {
@@ -70,12 +70,14 @@ function displayForecast(){
      forecastHtml +
      ` 
      <div class="weather-forecast">
+     <div class="temperature-wrap">
                     <div class="temperature-day" id="forecast-day">${day}</div>
                     <div class="forecast-icon" id="forecast-icon">🌥️</div>
 
                     <div class="temperature-degrees">
                         <div class="max-degree" id="max-temp">20°</div>
                         <div class="min-degree" id="min-temp">12°</div>
+                    </div>
                     </div>
                     </div>
                     `;

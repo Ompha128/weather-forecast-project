@@ -29,7 +29,7 @@ strong {
     background: rgba(20, 27, 64);
     background: linear-gradient(90deg, rgba(20, 27, 64) 0%, rgba(16, 22, 59) 35%, rgba(4, 3, 39) 100%);
     margin: 70px auto 0;
-    padding: 40px;
+    padding: 30px;
     max-width: 750px;
     border-radius: 10px;
 }
@@ -97,13 +97,18 @@ strong {
 
 .weather-forecast {
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     flex-direction: row;
-    margin-top: 40px;
+    margin-top: 40px; 
+     
 }
 
-
-
+.temperature-wrap{
+    
+    background:#a9aab1;
+    padding:10px 20px;
+    border-radius: 10px;
+}
 .temperature-day {
     font-size: 16px;
     line-height: 20px;
@@ -114,14 +119,14 @@ strong {
 
 .forecast-icon {
     font-size: 30px;
-    margin-top: 25px;
-    margin-left: -33px;
+    margin-top: 10px;
+    
     
 }
 
 .temperature-degrees {
-    margin-top: 65px;
-    margin-left: -33px;
+    margin-top: 10px;
+    
     
 }
 
