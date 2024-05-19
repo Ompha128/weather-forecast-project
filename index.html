@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,127 +11,56 @@
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>weather-forecast</title>
 </head>
+
 <body>
     <div class="weather-forecast-app">
-    <header>
-    <form id="search-form">
-        <input type="search" placeholder="Enter your city"  required id="search-input" class="search-city">
-        <input type="submit" value="Search" id="search-button" class="search-button">
-    </form>
-    </header>
+        <header>
+            <form id="search-form">
+                <input type="search" placeholder="Enter your city" required id="search-input" class="search-city">
+                <input type="submit" value="Search" id="search-button" class="search-button">
+            </form>
+        </header>
 
-    <main>
-        <h1 id="current-city"> Johanneburg</h1>
+        <main>
+            <h1 id="current-city"> Johannesburg</h1>
 
-        <div class="weather-current">
-            <span id="icon"> 
-                <img src="	https://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-night.png" class="temperature-icon" />
-            </span>
-            <span class="temperature-value" id="temp-value">20</span>
-            <span class="temperature-unit" id="temp-unit">°C</span>
-        </div>
-            
+            <div class="weather-current">
+                <span id="icon">
+                    <img src="	https://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-night.png"
+                        class="temperature-icon" />
+                </span>
+                <span class="temperature-value" id="temp-value">20</span>
+                <span class="temperature-unit" id="temp-unit">°C</span>
+            </div>
+
             <div class="weather-description">
                 <span class="temperature-description" id="description">clear sky</span>
                 <span class="current-date" id="current-date">| Saturday 01:14</span>
-             </div>
-
-        <div class="more-weather-details">
-            <div class="wind-speed" id="wind">Wind:<strong>3KMPH</strong></div>
-            <div class="humidity" id="humidity">Humidity:<strong>50%</strong></div>
-        </div>
-
-<div class="forecast-days">
-        <div class="weather-forecast">
-            <div class="temperature-day" id="forecast-day"> Mon</div>
-            <div class="forecast-icon" id="forecast-icon">🌥️</div>
-        
-            <div class="temperature-degrees">
-                <div class="max-degree" id="max-temp">20°</div>
-                <div class="min-degree" id="min-temp">12°</div>
             </div>
-        
-        </div>
-         
-        
-        <div class="weather-forecast">
-        <div class="temperature-day" id="forecast-day"> Tue</div>
-        <div class="forecast-icon" id="forecast-icon">🌥️</div>
 
-        <div class="temperature-degrees">
-        <div class="max-degree" id="max-temp">20°</div>
-        <div class="min-degree" id="min-temp">12°</div>
-        </div>
-        
-        </div>
-
-        <div class="weather-forecast">
-            <div class="temperature-day" id="forecast-day"> Wed</div>
-            <div class="forecast-icon" id="forecast-icon">🌥️</div>
-        
-            <div class="temperature-degrees">
-                <div class="max-degree" id="max-temp">20°</div>
-                <div class="min-degree" id="min-temp">12°</div>
+            <div class="more-weather-details">
+                <div class="wind-speed" id="wind">Wind:<strong>3KMPH</strong></div>
+                <div class="humidity" id="humidity">Humidity:<strong>50%</strong></div>
             </div>
-        
-        </div>
 
-        <div class="weather-forecast">
-            <div class="temperature-day" id="forecast-day"> Thu</div>
-            <div class="forecast-icon" id="forecast-icon">🌥️</div>
-        
-            <div class="temperature-degrees">
-                <div class="max-degree" id="max-temp">20°</div>
-                <div class="min-degree" id="min-temp">12°</div>
-            </div>
-        
-        </div>
+            
 
-        <div class="weather-forecast">
-            <div class="temperature-day" id="forecast-day"> Fri</div>
-            <div class="forecast-icon" id="forecast-icon">🌥️</div>
-        
-            <div class="temperature-degrees">
-                <div class="max-degree" id="max-temp">20°</div>
-                <div class="min-degree" id="min-temp">12°</div>
-            </div>
-        
-        </div>
+            <div class="weather-forecast" id="forecast"> </div>
 
-        <div class="weather-forecast">
-            <div class="temperature-day" id="forecast-day"> Sat</div>
-            <div class="forecast-icon" id="forecast-icon">🌥️</div>
-        
-            <div class="temperature-degrees">
-                <div class="max-degree" id="max-temp">20°</div>
-                <div class="min-degree" id="min-temp">12°</div>
-            </div>
-        
-        </div>
 
-        <div class="weather-forecast">
-            <div class="temperature-day" id="forecast-day"> Sun</div>
-            <div class="forecast-icon" id="forecast-icon">🌥️</div>
-        
-            <div class="temperature-degrees">
-                <div class="max-degree" id="max-temp">20°</div>
-                <div class="min-degree" id="min-temp">12°</div>
-            </div>
-        
-        </div>
+            
+        </main>
+        <footer>
+            <p>
+                This project was coded by <a href="https://github.com/Ompha128" target="_blank"> Ompha Tshikombeni </a>,
+                and is open-sourced on <a href="#" target="_blank"> Github</a>
+                and hosted on <a href="#" target="_blank"> Netlify</a>
+            </p>
+        </footer>
 
-        </div>
-    </main>
-    <footer>
-        <p>
-            This project was coded by <a href="https://github.com/Ompha128" target="_blank"> Ompha Tshikombeni </a>,
-            and is open-sourced on <a href="#" target="_blank"> Github</a>
-            and hosted on <a href="#" target="_blank"> Netlify</a>
-        </p>
-    </footer>
-    
-<script src="src/script.js"></script>
+        <script src="src/script.js"></script>
 
-</div>
+    </div>
 </body>
+
 </html>

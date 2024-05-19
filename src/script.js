@@ -25,7 +25,7 @@ function getTemperature(response){
   timeElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML = `${response.data.condition.description} |`;
   humidityElement.innerHTML = `Humidity:<strong>${response.data.temperature.humidity}%</strong>`;
-  windElement.innerHTML = `Wind:<strong>${response.data.wind.speed}KMPH</strong>`;
+  windElement.innerHTML = `Wind:<strong>${response.data.wind.speed} KMPH</strong>`;
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="temperature-icon" />`;
 }
   
@@ -60,6 +60,31 @@ function fetchCity(city) {
 
   axios.get(apiUrl).then(getTemperature);
 }
+function displayForecast(){
+
+  let days=["Sun", "Mon", "Tue", "Wed", "Thu","Fri","Sat"];
+  let forecastHtml="";
+
+  days.forEach(function (day) {
+     forecastHtml=
+     forecastHtml +
+     ` 
+     <div class="weather-forecast">
+                    <div class="temperature-day" id="forecast-day">${day}</div>
+                    <div class="forecast-icon" id="forecast-icon">🌥️</div>
+
+                    <div class="temperature-degrees">
+                        <div class="max-degree" id="max-temp">20°</div>
+                        <div class="min-degree" id="min-temp">12°</div>
+                    </div>
+                    </div>
+                    `;
+  });
+  let forecastElement=document.querySelector("#forecast");
+  forecastElement.innerHTML=forecastHtml;
+
+}
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", changeCity);
+displayForecast();
